@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Dropdown & Listbox</title>
+</head>
+<body>
+    <form action="proses.php" method="post">
+        <fieldset>
+            <legend>Form Pesanan</legend>
+            <p>
+                <label>Nama Pemesan</label>
+                <input type="text" name="nama" placeholder="....."/>
+            </p>
+            <p>
+                <label for="produk">Produk :</label>
+                <select name="produk" id="produk">
+                    <option value="option1">Kemeja</option>
+                    <option value="option2">Kaos</option>
+                    <option value="option3">Jaket</option>
+                    <option value="option4">Celana</option>
+                </select>
+            </p>
+            <p>
+                <label for="listbox">Jumlah :</label>
+                    <select name="listbox[]" id="listbox" multiple size="4">
+                        <option value="item1">1</option>
+                        <option value="item2">2</option>
+                        <option value="item3">3</option>
+                        <option value="item4">4</option>
+                        <option value="item5">5</option>
+                    </select>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
